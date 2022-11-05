@@ -5,7 +5,7 @@ import { createRoot } from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")).render(
-  <BrowserRouter>
+  <BrowserRouter basename="/job_page/">
     <React.StrictMode>
       <Suspense fallback={<h1>LOADDDDDDDDDEEERR</h1>}>
         <App />
