@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/job_page/static/css/main.0d2e6eb0.css",
+    "main.js": "/job_page/static/js/main.d43c3d87.js",
+    "static/media/sprite.svg": "/job_page/static/media/sprite.604283debbedce9ae9667f339f1d25f2.svg",
+    "index.html": "/job_page/index.html",
+    "main.0d2e6eb0.css.map": "/job_page/static/css/main.0d2e6eb0.css.map",
+    "main.d43c3d87.js.map": "/job_page/static/js/main.d43c3d87.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0d2e6eb0.css",
+    "static/js/main.d43c3d87.js"
+  ]
+}
