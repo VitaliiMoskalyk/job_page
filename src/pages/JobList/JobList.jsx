@@ -10,7 +10,7 @@ const JobList = () => {
 
   useEffect(() => {
     dataGenerator().then((data) => setData(data));
-    navigate("/");
+    navigate("/job_page");
   }, []);
 
   return (
