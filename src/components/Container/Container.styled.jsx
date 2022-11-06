@@ -1,7 +1,7 @@
 import styled from "@emotion/styled";
 
 export const Section = styled.div`
-  background-color: #e6e9f2;
+  background-color: ${(props) => props.bcgColor};
   height: fit-content;
 `;
 

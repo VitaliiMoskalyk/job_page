@@ -1,8 +1,8 @@
 import { Section, Box } from "./Container.styled";
 
-const Container = ({ children }) => {
+const Container = ({ children, bcgColor }) => {
   return (
-    <Section>
+    <Section bcgColor={bcgColor}>
       <Box>{children}</Box>
     </Section>
   );

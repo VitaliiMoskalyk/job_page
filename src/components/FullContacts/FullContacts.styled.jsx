@@ -15,8 +15,8 @@ export const BlockWrapper = styled.div`
   @media (min-width: 1920px) {
     width: 402px;
     position: absolute;
-    top: 56px;
-    right: 260px;
+    top: 0;
+    right: -506px;
   }
 `;
 

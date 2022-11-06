@@ -20,6 +20,18 @@ export const Title = styled.h2`
   cursor: pointer;
   @media (min-width: 1920px) {
     width: 430px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 25px;
+    /* or 125% */
+
+    letter-spacing: -0.625px;
+
+    /* Text/Dark */
+
+    color: #3a4562;
+
+    margin-bottom: 8px;
   }
 `;
 
@@ -39,4 +51,5 @@ export const Article = styled.p`
 
   max-height: 50px;
   overflow: hidden;
+  margin-bottom: 8px;
 `;

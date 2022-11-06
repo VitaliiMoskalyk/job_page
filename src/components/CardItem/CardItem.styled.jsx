@@ -16,6 +16,7 @@ export const Layout = styled.div`
   @media (min-width: 1920px) {
     padding: 24px 16px;
     height: 164px;
+    background-color: white;
   }
 `;
 

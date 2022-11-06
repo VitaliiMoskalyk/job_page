@@ -13,13 +13,13 @@ import {
   CostsBlock,
   Description,
   Paraghraf,
-  Button,
-  ButtonPosition,
   BlueRectangle,
   OrangeRectangle,
   SubParaghraf,
 } from "./JobInfoItem.styled";
 import { useWindowWidth } from "@react-hook/window-size";
+import ApplyButton from "../ApplyButton/ApplyButton";
+import BackButton from "../BackButton/BackButton";
 
 const JobInfoItem = () => {
   const location = useLocation();
@@ -44,7 +44,7 @@ const JobInfoItem = () => {
         <SaveTo title="Save to my list" icon="icon-Rectangle-31" />
         <SaveTo title="Share" icon="icon-Shape" />
       </IconWrapper>
-
+      {currentWidth >= 1920 && <ApplyButton />}
       <Article>
         <MainCardArticle title={title} />
       </Article>
@@ -90,9 +90,7 @@ const JobInfoItem = () => {
         Disability Insurance Life insurance
       </Description>
 
-      <ButtonPosition>
-        <Button type="button">Apply now</Button>
-      </ButtonPosition>
+      <ApplyButton />
 
       <SectionTitle title="Attached images" />
       <PicturesWrapper>
@@ -112,7 +110,8 @@ const JobInfoItem = () => {
         <OrangeRectangle key={id}>{e}</OrangeRectangle>
       ))}
 
-      {currentWidth < "1920px" && <SectionTitle title="Contacts" />}
+      {currentWidth < 1920 && <SectionTitle title="Contacts" />}
+      <BackButton />
       <FullContacts data={location.state} />
     </TextBlock>
   );

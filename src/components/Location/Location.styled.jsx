@@ -16,7 +16,9 @@ export const Wrapper = styled.div`
 `;
 
 export const Block = styled.p`
+  display: flex;
   Svg {
     margin-right: 8px;
+    margin-top: 3px;
   }
 `;

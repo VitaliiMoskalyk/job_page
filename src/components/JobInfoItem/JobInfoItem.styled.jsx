@@ -1,8 +1,9 @@
 import styled from "@emotion/styled";
-import MainCardArticle from "../MainCardArticle/MainCardArticle";
 
 export const TextBlock = styled.div`
   max-width: 430px;
+  background-color: white;
+  position: relative;
 `;
 
 export const PicturesWrapper = styled.div`
@@ -11,11 +12,12 @@ export const PicturesWrapper = styled.div`
   overflow: hidden;
   margin-top: 20px;
   margin-bottom: 63px;
+  height: 116px;
 `;
 
 export const Img = styled.img`
   width: 200px;
-  height: 116px;
+  height: auto;
   border-radius: 8px;
   margin-right: 9px;
 `;
@@ -27,11 +29,19 @@ export const IconWrapper = styled.div`
 
   margin-top: 24px;
   width: 200px;
+  @media (min-width: 1920px) {
+    position: absolute;
+    top: -20px;
+    right: 0;
+  }
 `;
 
 export const Article = styled.div`
   margin-top: 32px;
   margin-bottom: 21px;
+  @media (min-width: 1920px) {
+    margin-top: 0;
+  }
 `;
 
 export const CostsBlock = styled.div`
@@ -85,41 +95,6 @@ export const Paraghraf = styled.h3`
   color: #3a4562;
 
   margin-bottom: 10px;
-`;
-
-export const Button = styled.button`
-  width: 127px;
-  height: 52px;
-  background: #384564;
-  border-radius: 8px;
-
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 16px;
-  /* identical to box height, or 133% */
-
-  text-align: center;
-  text-transform: uppercase;
-
-  color: #ffffff;
-
-  outline: none;
-  border: none;
-  cursor: pointer;
-  :hover,
-  :focus {
-    background: #384568;
-    outline: 1px solid grey;
-  }
-`;
-
-export const ButtonPosition = styled.div`
-  display: flex;
-  justify-content: center;
-
-  @media (min-width: 1920px) {
-    justify-content: flex-start;
-  }
 `;
 
 export const BlueRectangle = styled.p`

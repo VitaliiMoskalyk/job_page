@@ -15,10 +15,12 @@ const Location = ({ location, address }) => {
     <Wrapper>
       {data && (
         <Block>
-          <Svg icon="icon-Location" width={13} height={18} />
-          {data.CntryName && data.CntryName + ", "}
-          {data.PlaceName}
-          {address && address}
+          <Svg icon="icon-Location" width={18} height={18} />
+          <>
+            {data.CntryName && data.CntryName + ", "}
+            {data.PlaceName}
+            {address && address}
+          </>
         </Block>
       )}
     </Wrapper>
